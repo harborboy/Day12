@@ -1,0 +1,18 @@
+<ht>New Patient</h1>
+
+  <%= form_for @patient do |f| %>
+  <%= f.label :first %>
+  <%= f.text_field :first %>
+  <%= f.label :last %>
+  <%= f.text_field :last %>
+  <%= f.label :birth %>
+  <%= f.date_select :birth %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <%= f.label :gender %>
+  <%= f.text_field :gender  %>
+  <%= f.label :blood %>
+  <%= f.text_field :blood %>
+  <br>
+  <%= f.submit %>
+  <% end %>

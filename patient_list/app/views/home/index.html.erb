@@ -1,0 +1,17 @@
+<h1>General Hospital Patient Tracking System</h1>
+<%= link_to "New Patient", new_patient_path %>
+<br>
+<% @patients.each do |patients| %>
+<%= patients.first %>
+<%= patients.last %>
+<%= patients.birth %>
+<%= patients.description %>
+<%= patients.gender %>
+<%= patients.blood %>
+<%= link_to patients.first, patient_path(patients) %>
+<%= link_to "Edit", edit_patient_path(patients) %>
+<%= link_to "Delete", patient_path(patients), method: :delete %>
+<br>
+<% end %>
+
+
